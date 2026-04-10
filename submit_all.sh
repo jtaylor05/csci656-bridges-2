@@ -57,8 +57,7 @@ for GROUP_ID in g1_dense_small g2_dense_large g3_moe_mixtral g4_moe_deepseek g5_
     --export=ALL \
     --wrap="
       module purge
-      module load cuda/11.7.1 gcc/10.2.0 anaconda3/2022.10 AI/pytorch_23.02-1.13.1-py3
-      conda activate ${CONDA_ENV}
+      module load cuda/11.7.1 gcc/10.2.0 AI/pytorch_23.02-1.13.1-py3
 
       export CUDA_DEVICE_MAX_CONNECTIONS=1
       export NCCL_TIMEOUT=120
